@@ -686,4 +686,14 @@ def fallback(message):
 
 if __name__ == '__main__':
     print("✅ البوت يعمل الآن...")
-    bot.polling(none_stop=True)
+
+while True:
+    try:
+        bot.infinity_polling(timeout=60, long_polling_timeout=10)
+    except Exception as e:
+        print(f"❌ حدث خطأ: {e}")
+        time.sleep(5)
+
+    print("✅ ما زلت حيًا...")  # يبقي Render في حالة نشاط
+    time.sleep(30)  # انتظر 30 ثانية قبل إعادة التشغيل
+
