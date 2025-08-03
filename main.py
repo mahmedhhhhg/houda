@@ -19,7 +19,7 @@ def install_and_import(package):
 install_and_import('google-generativeai')
 import google.generativeai as genai
 
-TOKEN = '8122329927:AAHRKHfIB1JsZLGYKGjczYZwO-P55XYxY3c'
+TOKEN = '8481760166:AAHAh7vmjUGZd1yVaD_77zgiA3-H6ypr6DA'
 ADMIN_ID = 7577607150
 AI_API_KEY = 'AIzaSyA5pzOpKVcMGm6Aek82KoB3Pk94dYg3LX4'
 DEV_NAME = "بوخابية أحمد"
